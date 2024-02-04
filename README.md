@@ -1,5 +1,5 @@
 # ScholarNet
-This is project involves implementing data structures and algorithms.ScholarNet a social network for afffiliations.
+This is project involves implementing data structures and algorithms for ScholarNet a social network for afffiliations.
 
 **Goal:** 
 - Create a program where one can enter and search for information about affiliations and their publications.Publications refer to each other,which chains publications together.
