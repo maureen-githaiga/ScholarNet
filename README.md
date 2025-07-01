@@ -1,35 +1,97 @@
 # ScholarNet
-This is project involves implementing data structures and algorithms for ScholarNet a social network for afffiliations.
 
-**Goal:** 
-- Create a program where one can enter and search for information about affiliations and their publications.Publications refer to each other,which chains publications together.
-- Practice how to use ready made data structures and algorithms of STL.
-- Write efficient algorithms and estimate their performance.
-- Produce code that is as efficient as possible in terms of command counts.
+This project involves implementing data structures and algorithms for **ScholarNet**, a social network for affiliations and their publications.
 
-**Task:** Implementing the class to datastructures which would store the required information in its datastructures, and whose methods implement the required functionality.Main program and the graphical user interface were provided.
+---
 
-**Functionalities**
+## 🎯 Goal
 
-**Affiliation Management**
+Create a program to:
 
-- Retrieve the count of affiliations
-- Add , retrieve and update affiliatiopns with details like name ,coordinates and type.
-- Get affiliations alphabetically and sorted by distance.
+- Enter and search for information about **affiliations** and their **publications**.  
+- Track how publications reference each other, creating chains of related publications.  
+- Practice using ready-made data structures and algorithms from the C++ STL.  
+- Write efficient algorithms and estimate their performance.  
+- Produce code optimized for minimal command counts and efficient execution.
 
-**Publication Management**
-- Add publications with ID's names ,years and affiliations.
-- Establish relationships between publications through references.
+---
+
+## 🛠️ Task Overview
+
+Implement a class `datastructures` that:
+
+- Stores required information within its data structures.  
+- Implements methods to support the needed functionalities.  
+
+> **Note:** The main program and graphical user interface (GUI) are provided.
+
+---
+
+## 🔍 Functionalities
+
+### Affiliation Management
+
+- Retrieve the count of affiliations.  
+- Add, retrieve, and update affiliations with details such as:  
+  - Name  
+  - Coordinates  
+  - Type  
+- Retrieve affiliations sorted alphabetically or by distance.
+
+### Publication Management
+
+- Add publications with:  
+  - IDs  
+  - Names  
+  - Years  
+  - Affiliations  
+- Establish reference relationships between publications.  
 - Associate affiliations with publications.
 
-  **Search Operations**
-  - Retrieve information about affiliations ,publications and their relationships.
-  - Find affiliations by their coordinates.
-  - Discover publications from a particular affiliation
+### Search Operations
 
-**Performance testing** - Evaluate the performance of operations using the provided perftest command. Which starts by clearing the data structure and adding n1 random affiliations and publications using random_add() which is then executed 'repeat' times.The command count is measured and if a test takes longer than timeout seconds it is halted.
+- Retrieve detailed information about affiliations, publications, and their relationships.  
+- Find affiliations by geographic coordinates.  
+- Discover publications from a specific affiliation.
 
-**Development Environment**
-- Implemented the project on a linux desktop environment ,utilizing tools such as QtCreator and GCC for C++ development which allowed access to command counters. 
+### Performance Testing
 
+- Evaluate the performance of operations using the provided `perftest` command.  
+- `perftest` clears the data structure, adds a specified number of random affiliations and publications, and executes repeated commands to measure command counts.  
+- Tests terminate early if execution exceeds a defined timeout.
 
+---
+
+## 💻 Development Environment
+
+- Implemented on a **Linux desktop**.  
+- Used **Qt Creator** and **GCC** for C++ development.  
+- Leveraged tools for measuring command counts and performance profiling.
+
+---
+
+## 📂 Repository Structure
+
+- `datastructures.cc` / `.hh` – Implementation of core data structures.  
+- `mainprogram.cc` / `.hh` – Main program logic.  
+- `mainwindow.cc` / `.hh` / `.ui` – GUI components.  
+- `prg1.pro` – Qt project file.  
+- Folders for example data, test cases, and optimization tests.
+
+---
+
+## 🚀 How to Run
+
+1. Build the project using Qt Creator or `qmake` and `make`.  
+2. Launch the main program to interact with ScholarNet’s GUI.  
+3. Use the CLI or GUI to add affiliations, publications, and perform searches.  
+4. Run performance tests with the `perftest` command.
+
+---
+
+## 📝 Notes
+
+- Focus on efficient algorithm design and minimal resource usage.  
+- Aim for code clarity and maintainability alongside performance.
+
+---
